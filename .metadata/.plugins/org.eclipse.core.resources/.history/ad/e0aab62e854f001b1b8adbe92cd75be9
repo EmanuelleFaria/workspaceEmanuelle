@@ -1,0 +1,14 @@
+package listas;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioQuatro {
+	public static void main(String[] args) {
+		
+		int numero1= Integer.parseInt(JOptionPane.showInputDialog("Numero 1"));
+		int
+		
+	}
+	
+	
+}

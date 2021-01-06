@@ -1,0 +1,26 @@
+package repeticao;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Sintaxe do For
+		 * 1º Parte: definimos o contador e o valor inicial
+		 * 2º Parte: condição (enquanto for verdadeiro o laço irá continuar)
+		 * 3º Parte: como ocorrerá a contagem
+		 */
+		
+		for (int contador=0;contador<500;contador++) {
+			System.out.println(contador);
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

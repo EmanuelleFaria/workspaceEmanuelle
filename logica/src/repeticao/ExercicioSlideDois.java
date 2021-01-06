@@ -1,0 +1,44 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioSlideDois {
+	
+	public static void main(String[] args) {
+	
+	/*
+	 *  Crie um programa que pergunte ao usuário o seu nível de escolaridade (Médio, Superior ou Pós) 
+	 *  enquanto a resposta for válida, irá computando os totais dos níveis digitados, 
+	 *  no final apresente somente o nível que foi mais votado.
+	 */
+	
+	String nivel = "";
+	int medio = 0;
+	int superior = 0;
+	int pos = 0;
+	
+	do {
+		nivel = JOptionPane.showInputDialog("Nivel de escolaridade:");
+		while (nivel.equals("medio") || nivel.equals("superior") || nivel.equals("pos")) {
+			nivel = JOptionPane.showInputDialog("Nivel inválido, tente novamente:");
+		}
+			if (nivel == "medio") {
+				medio = medio + 1;
+			} else if (nivel == "superior") {
+				superior = superior + 1;
+			} else {
+				pos = pos + 1;
+			} 	
+
+		} while(JOptionPane.showConfirmDialog(null,  "Continuar?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+
+		if (medio>superior && medio> pos) {
+			System.out.println("Nivel mais votado: MEDIO com " + medio + "votos");
+		} else if (superior>medio && superior>pos) {
+			System.out.println("Nivel mais votado: SUPERIOR com " + superior + "votos");
+		} else {
+			System.out.println("Nivel mais votado: POS com " + pos + "votos");
+		}
+
+	}
+}

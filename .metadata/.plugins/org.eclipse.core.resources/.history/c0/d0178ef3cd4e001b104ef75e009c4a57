@@ -1,0 +1,49 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposPrimitivos {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * VARIÁVEIS - WRAPPERS
+		 * boolean => dado lógico (true/false) - Boolean
+		 * char => 1 caracter - Character
+		 * 
+		 * ----- para números inteiros:
+		 * byte => -127 a +128 (ex: gols numa partida de futebol) - Byte
+		 * short => -32000 a +32000 - Short
+		 * int => -2bilhoes a +2bilhoes - Integer
+		 * long => ???lhoes (bem grande) - Long
+		 * 
+		 * ----- para números reais:
+		 * float => menos exatidão
+		 * double => dobro de precisão nas casas decimais quando comparado ao float
+		 */
+		
+		/*
+		 * criem variáveis para:
+		 * nota (semestral1)
+		 * nota (semestral2)
+		 * falta (máximo 200)
+		 * disciplina (nome da matéria)
+		 * média (calculem)
+		 */
+
+		
+		String materia = JOptionPane.showInputDialog("Digite o nome da matéria");
+		double nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota 1"));
+		double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota 2"));
+		int falta = Integer.parseInt(JOptionPane.showInputDialog("Digite a qtde de faltas"));
+		double media = (nota1+nota2)/2;
+		
+		System.out.println("Matéria: " + materia);
+		System.out.println("Nota 1: " + nota1);
+		System.out.println("Nota 2: " + nota2);
+		System.out.println("Faltas: " + falta);
+		System.out.println("Média: " + media);
+		
+	}
+
+}

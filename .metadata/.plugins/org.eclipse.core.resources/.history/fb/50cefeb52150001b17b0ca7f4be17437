@@ -1,0 +1,43 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Validar nome e idade:
+		 * O nome, deve ter entre 5 e 20 caracteres
+		 * E a idade deve estar entre 18 e 80 anos
+		 * 
+		 * No final exiba os dados imputados
+		 * 
+		 * Incremente no mesmo código:
+		 * O nome deve ter um sobrenome
+		 * No final exiba o sobrenome
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome e sobrenome:").toUpperCase();
+		
+		while (nome.length()<5 || nome.length()>20 && nome.contains(" ")==false){
+			nome = JOptionPane.showInputDialog("Digite o nome e sobrenome novamente contendo entre 5 a 20 caracteres:").toUpperCase();
+		}
+		
+		Short idade = Short.parseShort(JOptionPane.showInputDialog("Digite sua idade:"));
+		
+		while (idade<18 || idade>80){
+			idade = Short.parseShort(JOptionPane.showInputDialog("Digite a idade novamente entre 18 e 80 anos:"));
+		}
+		
+		System.out.println("Nome: " + nome);
+		System.out.println("Sobrenome: " + nome.substring(nome.indexOf(" ")+1));
+		System.out.println("Idade: " + idade);
+		
+		
+		
+		
+		
+	}
+
+}

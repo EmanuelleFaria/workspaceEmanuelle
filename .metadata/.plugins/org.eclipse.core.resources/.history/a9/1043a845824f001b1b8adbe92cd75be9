@@ -1,0 +1,29 @@
+package listas;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioTres {
+
+	public static void main(String[] args) {
+		
+	int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Número 1"));
+	int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Número 2"));
+	String operacao = JOptionPane.showInputDialog("Operacao");
+	double resposta;
+	
+	if(operacao.equals("+")) {
+		resposta = (numero1+numero2);
+	}else if(operacao.equals("-")) {
+		resposta = numero1-numero2;
+	}else if(operacao.equals("*")) {
+		resposta = numero1*numero2;
+	}else {
+		resposta = numero1/numero2;
+	}
+	
+	System.out.println("Resposta: " + resposta);
+	
+	
+	}
+
+}

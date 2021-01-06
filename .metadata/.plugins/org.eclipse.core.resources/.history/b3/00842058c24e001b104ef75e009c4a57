@@ -1,0 +1,55 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Existem dois Tipos de Dados
+		 * - alfanumérico: é o dado que não vai ser utilizado em uma expressão matemática.
+		 * CEP=> 00010-009 (de um colaborador do Itau
+		 * CPF (de um aluno de uma universidade)
+		 * Em Java => String
+		 * 
+		 * - numérico: é o dado que PODE ser utilizado em uma expressão matemática.
+		 * CEP=> 00010-009 => 1 (diante de um contexto do site dos Correios = 00010009)
+		 * CPF (contexto do site da Receita Federal)
+		 * Em Java => int (números inteiros) e double (para números reais)
+		 */
+		
+		/*
+		 * Nome da variável = identificador
+		 * Regras
+		 * - 1º não começarás com números (1berto não pode, h1berto pode)
+		 * - 2º não farás uso de palavras reservadas (int int não pode)
+		 * - 3º não usarás caracteres especiais (d@t@ não pode, nome cliente não pode)
+		 * 
+		 * Padroes
+		 * - nomes significativos. Evitem: x, n1, xpto...
+		 * - começa com letra minuscula
+		 * padrão CamelCase
+		 * dataNascimento (correto)
+		 * datanascimento (errado)
+		 * data_nascimento (correto)
+		 * data_Nascimento (errado)
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Digite o seu nome");
+		int idade = 23;
+		double altura = 1.71;
+		
+		System.out.println("Nome: " + nome);
+		System.out.println("Idade: " + idade);
+		System.out.println("Altura: " + altura);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

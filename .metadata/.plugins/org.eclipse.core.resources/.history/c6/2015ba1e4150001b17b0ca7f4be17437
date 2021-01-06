@@ -1,0 +1,81 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExercicioSlide {
+
+	public static void main(String[] args) {
+		/*
+(Slide 77 - PPT 1-2-3 - Github)
+
+Monte um programa que solicite a idade e o nome das pessoas. 
+A aplicação continuará perguntando nome e idade enquanto o usuário afirmar que deseja continuar.
+Ao terminar, a aplicação deverá exibir:
+- a quantidade de pessoas maiores de idade e 
+- a média entre todas as idades que foram digitadas. 
+- a pessoa mais experiente (nome e idade)
+- a pessoa mais jovem (nome e idade)
+		 */
+		
+		String nome = "";
+		int idade = 0;
+		
+		String nome2 = "";
+		int idade2 = 0;
+		
+		int contador = 1;
+		
+		int maioresIdade = 0;
+		double mediaIdades = 0;
+		
+		String maisVelho = "";
+		int idadeMaisVelho = 0;
+		
+		String maisJovem = "";
+		int idadeMaisJovem = 0;
+		
+		
+		do {
+		nome = JOptionPane.showInputDialog("Nome:");
+		idade = Integer.parseInt(JOptionPane.showInputDialog("Idade:"));
+
+		maisVelho = nome;
+		idadeMaisVelho = idade;
+		
+		maisJovem = nome;
+		idadeMaisJovem = idade;
+		
+		mediaIdades = idade;
+				
+			if (contador>1) {
+				mediaIdades = (mediaIdades+idade)/2;
+				if (idade>=18) {
+					maioresIdade = maioresIdade + 1;
+				}
+				if (idade>idade2) {
+					maisVelho = nome;
+					idadeMaisVelho = idade;
+				}else {
+					maisJovem = nome;
+					idadeMaisJovem = idade;
+				}
+				
+			} else {
+				idade2 = idade;
+				nome2 = nome;
+			}
+		contador = contador + 1;
+
+		} while(JOptionPane.showConfirmDialog(null,  "Continuar?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+
+		System.out.println("Maiores de idade: " + maioresIdade);
+		System.out.println("Média entre as idades: " + mediaIdades);
+		System.out.println("Mais velho: " + maisVelho);
+		System.out.println("Idade mais velho: " + idadeMaisVelho);
+		System.out.println("Mais jovem: " + maisJovem);
+		System.out.println("Idade mais jovem: " + idadeMaisJovem);
+
+	}
+
+}
+

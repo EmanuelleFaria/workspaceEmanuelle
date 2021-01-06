@@ -1,0 +1,52 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+
+		/*
+		 * 1º Fase:
+		 * Jogador1 => vai digitar um número
+		 * Jogador2=> vai tentar adivinhar o número digitado pelo Jogador1
+		 * Quando ele acertar, mostra a mensagem de Parabéns
+		 * 
+		 * 2º Fase:
+		 * Implemente dicas para o Jogador2
+		 * "Número é menor" ou "Número é maior"
+		 * 
+		 * 3º Fase:
+		 * Contar quantas tentativas o Jogador2 utilizou para acertar
+		 * No final exibir essa quantidade junto com a mensagem de Parabéns
+		 */
+		
+		
+		double jogador1 = Double.parseDouble(JOptionPane.showInputDialog("Jogador1 digite um número:"));
+		double jogador2 = Double.parseDouble(JOptionPane.showInputDialog("Jogador2 digite tente acertar o número do Jogador1:"));
+		
+		while(jogador1!= jogador2){
+			if(jogador2>jogador1) {
+				jogador2 = Double.parseDouble(JOptionPane.showInputDialog("O número é menor! Tente novamente:"));
+			}else {
+				jogador2 = Double.parseDouble(JOptionPane.showInputDialog("O número é maior! Tente novamente:"));
+			}
+		
+		}
+		
+		System.out.println("Parabéns! Você acertou o número " + jogador1);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
