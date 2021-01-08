@@ -7,7 +7,7 @@ package br.com.ecommerceabc.modelo;
  *Diz que:
  * - TODOS os atributos devem ser privados
  * - CADA atributo deve possuir INDIVIDUALMENTE métodos getters e setters.
- * - 
+ * - Toda classe BEANS deve possuir no MiNIMO 2 construtores, um vazio e outro com todos os parâmetros para os atributos
  */
 
 public class Produto {
@@ -18,8 +18,29 @@ public class Produto {
 	private float valorCompra;
 	private int qtde;
 
-	public void getPromocao(float porcentagem) {
-		valorVenda = valorVenda*porcentagem;
+	
+	
+	@Override
+	public String toString() {
+		return "Produto [id=" + id + ", descricao=" + descricao + ", valorVenda=" + valorVenda + ", valorCompra="
+				+ valorCompra + ", qtde=" + qtde + "]";
+	}
+
+	public Produto(int id, String descricao, float valorVenda, float valorCompra, int qtde) {
+		super();
+		this.id = id;
+		this.descricao = descricao;
+		this.valorVenda = valorVenda;
+		this.valorCompra = valorCompra;
+		this.qtde = qtde;
+	}
+
+	public Produto() {
+		super();
+	}
+
+	public float getPromocao(float porcentagem) {
+		return valorVenda - valorVenda*(porcentagem/100);
 	}
 	
 	public String verificarEstoque() {
@@ -33,8 +54,8 @@ public class Produto {
 	}
 	
 	public void atualizarValores(float porcentagem) {
-		valorVenda = valorVenda*porcentagem;
-		valorCompra = valorCompra*porcentagem;
+		valorVenda = valorVenda + valorVenda*(porcentagem/100);
+		valorCompra = valorCompra + valorCompra*(porcentagem/100);
 	}
 	
 	public float getTotalCompras() {

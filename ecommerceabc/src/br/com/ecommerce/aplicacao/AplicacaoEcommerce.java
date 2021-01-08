@@ -8,17 +8,18 @@ public class AplicacaoEcommerce {
 
 		Produto objeto = new Produto();
 		
-		objeto.getAll();
+		System.out.println(objeto.getAll());
 		objeto.setAll(1, "blusa", 100, 50, 2);
-		objeto.getAll();
+		System.out.println(objeto.getAll());
 		
-		objeto.getPromocao();
-		objeto.getTotalVendas();
-		objeto.getTotalCompras();
+		System.out.println(objeto.getPromocao());
+		System.out.println(objeto.getTotalVendas());
+		System.out.println(objeto.getTotalCompras());
 		objeto.atualizarValores((float)1.2);
-		objeto.verificarEstoque();
-		
-		
+		System.out.println(objeto.getAll());
+		System.out.println(objeto.verificarEstoque());
+		objeto.getPromocao((float) 0.85);
+		System.out.println(objeto.getAll());
 		
 		
 	}
