@@ -15,12 +15,19 @@ public class Professor {
 	}
 	
 	public String getSaudacao() {
-		if (formacao == "Doutor") {
-			return "PhD" + nome.substring(0,nome.indexOf(" "));
-		}else if (formacao == "Mestre") {
-			return "Ms." + nome.substring(0,nome.indexOf(" "));
+		String primeiroNome = nome;
+		if (nome.contains(" ")==true) {
+			primeiroNome = nome.substring(0,nome.indexOf(" "));
+		}
+		
+		if (formacao.toUpperCase().equals("DOUTOR")) {
+			return "PhD " + primeiroNome;
+		}else if (formacao.toUpperCase().equals("MESTRE")) {
+			return "Ms. " + primeiroNome;
+		}else if (formacao.toUpperCase().equals("ESPECIALISTA")){
+			return "Especialista " + primeiroNome;
 		}else {
-			return "Especialista" + nome.substring(0,nome.indexOf(" "));
+			return "Sem formação: " + primeiroNome;
 		}
 	}
 	

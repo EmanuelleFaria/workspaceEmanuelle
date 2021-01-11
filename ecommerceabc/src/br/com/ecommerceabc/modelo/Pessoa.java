@@ -1,11 +1,18 @@
 package br.com.ecommerceabc.modelo;
 
-public class Cliente {
+import pacoteUtil.PadraoPessoa;
+
+public class Pessoa implements PadraoPessoa{
 
 		private int id;
 		private String nome;
 		private String email;
 		private Endereco endereco;
+		
+		public String getResumo() {
+			return null;
+		}
+		
 		
 		public String getServidor() {
 			if(email.contains("@")) {
@@ -26,11 +33,11 @@ public class Cliente {
 			return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", endereco=" + endereco + "]";
 		}
 
-		public Cliente() {
+		public Pessoa() {
 			super();
 		}
 
-		public Cliente(int id, String nome, String email, Endereco endereco) {
+		public Pessoa(int id, String nome, String email, Endereco endereco) {
 			super();
 			this.id = id;
 			this.nome = nome;
@@ -68,6 +75,12 @@ public class Cliente {
 
 		public void setEndereco(Endereco endereco) {
 			this.endereco = endereco;
+		}
+
+
+		@Override
+		public void setResumo(String param1, String param2) {
+			
 		}
 		
 		

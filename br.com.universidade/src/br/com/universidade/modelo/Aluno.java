@@ -8,7 +8,10 @@ public class Aluno {
 	private boolean ativo;
 	
 	public String getSaudacao() {
-		return nome.substring(0,nome.indexOf(" "));
+		if (nome.contains(" ")==true) {
+			return nome.substring(0,nome.indexOf(" "));
+		}
+		return nome;
 	}
 	
 	public void setAll(int rm, String fone, String nome, boolean ativo) {

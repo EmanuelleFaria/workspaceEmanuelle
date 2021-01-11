@@ -10,7 +10,7 @@ public class Turma {
 	private Curso curso;
 	
 	public String getResumo() {
-		return "Nome do curso: " + curso + "\n" +
+		return "Nome do curso: " + curso.getDescricao() + "\n" +
 				"Sala: " + sala + "\n" +
 				"Saudacao Professor: " + professor.getSaudacao() + "\n" +
 				"Saudacao Aluno: " + aluno.getSaudacao();

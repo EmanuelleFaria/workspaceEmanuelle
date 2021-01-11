@@ -1,4 +1,4 @@
-package br.com.universidade.aplicacao;
+package pacoteUtil;
 
 import javax.swing.JOptionPane;
 

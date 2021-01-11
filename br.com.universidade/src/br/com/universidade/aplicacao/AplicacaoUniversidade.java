@@ -18,14 +18,14 @@ public class AplicacaoUniversidade {
 						At.i("Rm"),
 						At.s("Fone"),
 						At.s("Nome Aluno"),
-						At.b("Ativo")
+						At.b("Está ativo?")
 						),
 				new Professor(
 						At.s("Nome Professor"),
 						At.f("Valor Hora"),
 						At.s("Formacao"),
 						At.s("Area"),
-						At.s("email")
+						At.s("Email")
 						),
 				new Curso(
 						At.s("Descricao"),
