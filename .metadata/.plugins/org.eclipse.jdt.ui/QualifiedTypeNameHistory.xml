@@ -7,8 +7,10 @@
 <fullyQualifiedTypeName name="banco.modelo.Endereco"/>
 <fullyQualifiedTypeName name="banco.modelo.Agencia"/>
 <fullyQualifiedTypeName name="java.lang.Character.Subset"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="br.com.universidade.modelo.Aluno"/>
 <fullyQualifiedTypeName name="br.com.universidade.modelo.Curso"/>
 <fullyQualifiedTypeName name="br.com.universidade.modelo.Turma"/>
+<fullyQualifiedTypeName name="pacoteUtil.PadraoPessoa"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="pacoteUtil.At"/>
 </qualifiedTypeNameHistroy>

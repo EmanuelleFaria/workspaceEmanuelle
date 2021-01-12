@@ -22,6 +22,8 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item key="contextSelector.size.x" value="331"/>
+		<item key="contextSelector.size.y" value="221"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -45,7 +47,7 @@
 		<item key="DIALOG_X_ORIGIN" value="85"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 		<item key="DIALOG_WIDTH" value="526"/>
-		<item key="DIALOG_HEIGHT" value="633"/>
+		<item key="DIALOG_HEIGHT" value="554"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
@@ -58,7 +60,7 @@
 		<item key="OmitCallToSuper" value="false"/>
 	</section>
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="90"/>
+		<item key="DIALOG_X_ORIGIN" value="109"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
 		<item key="DIALOG_WIDTH" value="517"/>
 		<item key="DIALOG_HEIGHT" value="633"/>

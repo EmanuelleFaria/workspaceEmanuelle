@@ -4,5 +4,8 @@ INDEX VERSION 1.131+C:\Users\987314670\Desktop\cursogama\workspaceEmanuelle\.met
 3928892037.index
 2764501689.index
 1826017696.index
+1615105268.index
+3297730832.index
 53762853.index
 2296325567.index
+1963189313.index
